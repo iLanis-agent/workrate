@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work Rate Math - combined work rate arithmetic</title>
+<style>
+  :root { --accent:#a8651a; --ink:#2b1c08; --paper:#fbf5ea; --soft:#f3e5cc; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#8a6a3a; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Work Rate Math</h1>
+  <p class="lede">A 6-hour worker and a 3-hour worker finish one job in 2 hours, not 4.5.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Work Rate Math combines the times you type, assuming every worker or pipe keeps one steady rate. It does not know about slowdowns, handoffs, setup time or whether the numbers you typed are right. Check those where they apply.
+  </div>
+  <section>
+    <h2>The together truth</h2>
+    <p>Working together, 6 h and 3 h finish one job in exactly 2 h, or 2 h 0 min to the nearest minute.</p>
+  </section>
+  <section>
+    <h2>The other truth</h2>
+    <p>If one worker alone takes 6 h and both together take 2 h, the other worker alone takes exactly 3 h, or 3 h 0 min to the nearest minute.</p>
+  </section>
+  <section>
+    <h2>The pipe truth</h2>
+    <p>An inlet that fills the tank in 3 h and an outlet that drains it in 6 h, both open, fill an empty tank in exactly 6 h, or 6 h 0 min to the nearest minute.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Work Rate Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
